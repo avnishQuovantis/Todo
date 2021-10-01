@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right,#cc00ff,#f21515);
+        
+
+}
+.heading{
+    color:#ff6492 ;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.Todo{
+    background-color: white;
+    border: 2px solid;
+    padding: 1rem;
+    max-width: 480px;
+    min-height: 300px;
+    border-radius: 1.5rem;
+}
+.inputContainer{
+    outline:none ;
+    border: 0px;
+}
+.delete{
+    
+    
+}
+.add{
+    margin-left: 5px;
+}
+.taskList{
+    width: 100%;
+    padding: 5px;
+}
+.taskList > *{
+    
+    display: flex;
+    margin-bottom:10px ;
+    
+}
+.taskList li >div{
+    width: 80%;
+}
+.taskList li >button{
+    width: 20%;
+}
+.taskName{
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+    border-radius: 6px;
+    border-top: #00000066 2px solid;
+    border-left: 1px solid #000000ad;
+    border-bottom: 1px solid black;
+}
