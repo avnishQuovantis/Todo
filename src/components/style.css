@@ -2,9 +2,9 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(to right,#cc00ff,#f21515);
+    /* background: linear-gradient(to right,#cc00ff,#f21515); */
         
-
+background-color: gainsboro;
 }
 .heading{
     color:#ff6492 ;
@@ -15,10 +15,40 @@ body{
     background-color: white;
     border: 2px solid;
     padding: 1rem;
-    max-width: 480px;
+    min-width: 400px;
     min-height: 300px;
+    max-width: 70%;
+    margin:auto;
     border-radius: 1.5rem;
+    margin-top: 8%;
 }
+.addButton{
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+#addBtn{
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    outline: 15px;
+    padding: 4px 10px;
+    color: white;
+    font-size: 1.2rem;
+}
+#addBtn:hover{
+    opacity: 0.8;
+}
+#addBtn:active{
+    opacity: 0.5;
+}
+.taskColumn{
+    column-width: 10rem;text-align: center;
+
+
+}
+
 .inputContainer{
     outline:none ;
     border: 0px;
@@ -46,6 +76,7 @@ body{
 .taskList li >button{
     width: 20%;
 }
+
 .taskName{
     display: flex;
     align-items: center;
@@ -54,4 +85,16 @@ body{
     border-top: #00000066 2px solid;
     border-left: 1px solid #000000ad;
     border-bottom: 1px solid black;
+}
+.priorityBtn{
+    padding: 0;
+}
+tr td{
+    max-width: 200px;
+    max-height: 100px;
+    overflow-x: auto;
+}
+.actionBtn{
+    padding: 0;
+    margin-left: 5px;
 }
