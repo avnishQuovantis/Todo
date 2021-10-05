@@ -22,6 +22,9 @@ background-color: gainsboro;
     border-radius: 1.5rem;
     margin-top: 8%;
 }
+.closeTodo{
+    display: none;
+}
 .addButton{
     width: 100%;
     margin-bottom: 1rem;

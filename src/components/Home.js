@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import { BrowserRouter as Router,Route,Switch} from 'react-router-dom'
+import Edit from './Edit'
 import Todo from './Todo'
 import Add from './Add'
 import { useContext } from 'react'
@@ -26,7 +27,17 @@ export default function Home() {
         })
         setTaskList(newlist)
     }
-    let editTask=(id)=>{
+    let editTask=(obj)=>{
+        
+        let newArr=[]
+        for(let i=0;i<taskList.length;i++){
+            if(taskList[i].id==obj.id){
+                newArr.push(obj)
+            }else{
+                newArr.push(taskList[i])
+            }
+        }
+        setTaskList(newArr)
         
     }
 
@@ -37,6 +48,7 @@ export default function Home() {
                 <Route exact path="/"><Todo taskList={taskList} editTask={editTask} 
                 deleteTask={deleteTask}  searchTask={searchTask}/></Route>
                 <Route exact path="/add"><Add taskLength={taskList.length} addTask={addTask}/></Route>
+                <Route path="/edit"><Edit editTask={editTask}/></Route>
             </Switch>
            
         </Router>
